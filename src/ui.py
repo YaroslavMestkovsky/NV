@@ -53,7 +53,7 @@ class ScreenshotApp(QWidget):
     def start_capture(self):
         if not self.capture_active:
             self.capture_active = True
-            self.timer.start(3000)  # Запуск таймера с интервалом 3 секунды
+            self.timer.start(1000)  # Запуск таймера с интервалом 3 секунды
             self.logger.log("Захват скриншотов запущен.")
         else:
             self.logger.log("Захват уже запущен.")
